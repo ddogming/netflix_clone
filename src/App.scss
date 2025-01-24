@@ -2,5 +2,20 @@
 @import "./styles/global.scss";
 @import "./styles/mixin.scss";
 @import "./styles/Header.scss";
+@import "./styles/Membership.scss";
 @import "./styles/banner.scss";
 @import "./styles/FAQ.scss";
+@import "./styles/Whyjoin.scss";
+@import "./styles/Footer.scss";
+@import "./styles/MoveSlider.scss";
+@import "./styles/Login.scss";
+
+@media (max-width: 768px) {
+    .app{
+        *{margin: 0 auto;}
+    }
+    .movie-card > img{
+        // width: 10px;
+    }
+  }
+  

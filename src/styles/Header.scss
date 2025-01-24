@@ -12,7 +12,7 @@ nav{
     display: flex;
     justify-content: space-between;
     @include responsive($breakpoint-medium){
-        width: 100%;
+        width: 95%;
     }
     h1{
         color: $primary-color;
@@ -52,22 +52,6 @@ nav{
         margin-bottom: 20px;
     }
     p{
-        font-size: $font-size-medium;
-    }
-    .email-box{
-        input{
-            font-size: $font-size-medium;
-            padding: 0.5rem 1rem;
-            margin-right: 10px;
-            margin-top: 10px;
-            @include responsive($breakpoint-small){
-                width: 100%;
-            }
-        }
-        button{
-            font-size: $font-size-medium;
-            @include button-style;
-        }
+        font-size: $font-size-small;
     }
 }
-

@@ -1,17 +1,38 @@
 .faq{
     @include component_size;
+    h2{
+        padding-top: 50px;
+    }
 }
-.faq-list > li {
-    padding: 5px;
-    list-style: none;
-}
-.faq-list > li > button{
-    width: 140vh;
-    height: 80px;
-    background-color: #444;
-    color: #fff;
-    list-style: none;
-    font-size: 25px;
-    text-align: left;
-    padding-left: 15px;
+.faq-list{
+    li{
+        padding-top: 20px;
+        margin: 5px;
+        button{
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            text-align: left;
+            padding: 10px;
+            font-size: $font-size-medium;
+            background-color: #444;
+            color: #fff;
+            height: 90px;
+            font-size: 26px;
+        }
+        p{
+            font-size: 26px;
+            height: 0;
+            opacity: 0;
+            background-color: #2c2c2c;
+            transition: 0.3s;
+        }
+        p.open{
+            height: 150px;
+            padding: 10px 0;
+            opacity: 1;
+        }
+    }
 }
